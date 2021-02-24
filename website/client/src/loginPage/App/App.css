@@ -1,0 +1,16 @@
+@import url("//fonts.googleapis.com/css?family=Bubblegum+Sans");
+
+.loginPage {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.introArea {
+  font-family: "Bubblegum Sans";
+  font-size: 80px;
+  text-align: center;
+  color: white;
+}

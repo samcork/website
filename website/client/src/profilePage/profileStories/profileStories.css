@@ -1,0 +1,26 @@
+.profileStories {
+  margin: 20px 20px 0px 20px;
+}
+
+.delStory {
+  display: inline-flex;
+  font-weight: bold;
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.singleStory {
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.yourStories:before {
+  display: block;
+  height: 2px;
+  background-color: #004225;
+  content: " ";
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

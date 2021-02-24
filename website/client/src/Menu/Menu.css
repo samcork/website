@@ -1,0 +1,133 @@
+/* header */
+
+.head {
+  background-color: #004225;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  z-index: 3;
+  grid-area: head;
+}
+
+.head ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #004225!important;
+}
+
+.head li a {
+  color: white;
+  display: block;
+  padding: 36px 30px !important;
+  border-right: 1px solid #004225!important;
+  text-decoration: none;
+}
+
+.head li a:hover,
+.head .menu-btn:hover {
+  color: black;
+  background-color: #f4f4f4;
+}
+
+.head .logo {
+  font-family: "Bubblegum Sans";
+  color: white;
+  display: block;
+  float: left;
+  font-size: 3em;
+  padding: 11px 30px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.head .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.head .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 40px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.head .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 7px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 40px;
+}
+
+.head .menu-icon .navicon:before,
+.head .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.head .menu-icon .navicon:before {
+  top: 16px;
+}
+
+.head .menu-icon .navicon:after {
+  top: -16px;
+}
+
+/* menu btn */
+
+.head .menu-btn {
+  display: none;
+}
+
+.head .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+.head .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.head .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.head .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.head .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.head .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .head li {
+    float: left;
+  }
+  .head li a {
+    padding: 20px 30px;
+  }
+  .head .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .head .menu-icon {
+    display: none;
+  }
+}

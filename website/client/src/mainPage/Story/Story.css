@@ -1,0 +1,16 @@
+.storyDisplay {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.storyText:before {
+    display: block;
+    height: 2px;
+    background-color: #004225;
+    content: " ";
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
