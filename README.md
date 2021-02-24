@@ -1,3 +1,4 @@
-# short story website
+# Short Story Website
 
-hosted at http://emaginate.herokuapp.com/
+Created in React.
+Hosted at http://emaginate.herokuapp.com/
